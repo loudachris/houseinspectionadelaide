@@ -85,7 +85,7 @@ export function SiteFooter() {
 
           <div>
             <h3 className="text-[14px] uppercase tracking-[.14em] text-white/60 font-[var(--font-mono)] mb-5">
-              Get started
+              Resources
             </h3>
             <ul className="space-y-2.5 text-[14.5px]">
               <li>
@@ -94,13 +94,23 @@ export function SiteFooter() {
                 </Link>
               </li>
               <li>
-                <Link href="/book-online" className="hover:text-[var(--color-secondary-light)]">
-                  Book online
+                <Link href="/tools" className="hover:text-[var(--color-secondary-light)]">
+                  Free tools
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="hover:text-[var(--color-secondary-light)]">
-                  How matching works
+                <Link href="/guides" className="hover:text-[var(--color-secondary-light)]">
+                  Guides
+                </Link>
+              </li>
+              <li>
+                <Link href="/glossary" className="hover:text-[var(--color-secondary-light)]">
+                  Glossary
+                </Link>
+              </li>
+              <li>
+                <Link href="/standards" className="hover:text-[var(--color-secondary-light)]">
+                  AS 4349 standards
                 </Link>
               </li>
               <li>

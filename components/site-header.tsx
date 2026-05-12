@@ -5,12 +5,12 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 
 const NAV = [
-  { href: "/", label: "Home" },
   { href: "/services", label: "Services" },
   { href: "/areas", label: "Areas" },
-  { href: "/pricing", label: "How pricing works" },
-  { href: "/about", label: "About" },
+  { href: "/tools", label: "Tools" },
   { href: "/guides", label: "Guides" },
+  { href: "/pricing", label: "Pricing" },
+  { href: "/about", label: "About" },
 ];
 
 export function SiteHeader() {
