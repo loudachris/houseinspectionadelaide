@@ -18,9 +18,9 @@ export const SITE = {
   social: {},
   defaultOgImage: "/og-default.png",
   disclaimer:
-    "House Inspection Adelaide is an independent lead-matching service. We connect property buyers with independent licensed Adelaide building inspectors. We do not conduct inspections, charge for inspections, set inspector prices, or receive commissions from inspectors. Every inspection contract is directly between you and the inspector you choose.",
+    "House Inspection Adelaide is an independent lead-matching service. We connect property buyers with independent licensed Adelaide building inspectors. We do not conduct inspections or set inspector prices. Inspectors in the network pay a small per-lead referral fee to us when they accept a lead - that's how the site is free for you. Every inspection contract is directly between you and the inspector you choose. Full breakdown at /how-we-make-money.",
   disclaimerShort:
-    "Independent lead-matching service. We do not conduct inspections. Every inspection contract is between you and your chosen inspector.",
+    "Independent lead-matching service. We don't inspect; we connect you with three licensed Adelaide inspectors. Inspectors pay us a per-lead referral fee. See /how-we-make-money for the full breakdown.",
 } as const;
 
 export const SUBURBS = [

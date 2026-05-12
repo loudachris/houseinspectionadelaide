@@ -165,19 +165,23 @@ export default function PricingPage() {
               <ul className="space-y-3 text-[15px] text-[var(--color-fg)]">
                 <li className="flex gap-2.5 items-start">
                   <CheckCircle2 size={16} className="text-[var(--color-primary)] flex-shrink-0 mt-0.5" />
-                  Inspectors don&apos;t pay to be in the network.
+                  Inspectors don&apos;t pay to be listed.
                 </li>
                 <li className="flex gap-2.5 items-start">
                   <CheckCircle2 size={16} className="text-[var(--color-primary)] flex-shrink-0 mt-0.5" />
-                  No commission is taken from any inspection booking.
+                  Inspectors pay a small per-lead referral fee only when they accept a lead. Industry standard cost of doing business.
                 </li>
                 <li className="flex gap-2.5 items-start">
                   <CheckCircle2 size={16} className="text-[var(--color-primary)] flex-shrink-0 mt-0.5" />
-                  Inspectors set their own prices for every quote.
+                  Inspectors set their own prices for every quote. No price markup is added because you came through us.
                 </li>
                 <li className="flex gap-2.5 items-start">
                   <CheckCircle2 size={16} className="text-[var(--color-primary)] flex-shrink-0 mt-0.5" />
                   Inspectors with current agent or builder relationships are excluded.
+                </li>
+                <li className="flex gap-2.5 items-start">
+                  <CheckCircle2 size={16} className="text-[var(--color-primary)] flex-shrink-0 mt-0.5" />
+                  Full breakdown on the <a href="/how-we-make-money" className="text-[var(--color-primary)] font-semibold underline">transparency page</a>.
                 </li>
               </ul>
             </article>

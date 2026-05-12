@@ -109,6 +109,11 @@ export function SiteFooter() {
                 </Link>
               </li>
               <li>
+                <Link href="/how-we-make-money" className="hover:text-[var(--color-secondary-light)]">
+                  How we make money
+                </Link>
+              </li>
+              <li>
                 <Link href="/sample-report" className="hover:text-[var(--color-secondary-light)]">
                   Sample report
                 </Link>

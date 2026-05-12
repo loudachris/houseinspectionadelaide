@@ -15,8 +15,8 @@ export const metadata: Metadata = {
 const PROMISES = [
   {
     Icon: Eye,
-    title: "Independent",
-    body: "Zero commercial relationship with sellers, agents, or builders. No commission, no kickbacks, no referral fees from inspectors to us or from us to anyone.",
+    title: "Independent from agents",
+    body: "Zero commercial relationship with sellers, real estate agents, or builders. We don't accept agent referrals or pay kickbacks. Inspectors pay a per-lead referral fee to us (industry-standard cost of doing business) - that's it. Read the full breakdown at our transparency page.",
   },
   {
     Icon: BadgeCheck,
@@ -99,7 +99,7 @@ export default function AboutPage() {
 
       <section className="py-20 bg-white">
         <div className="wrap max-w-[820px]">
-          <SectionHead eyebrow="HOW WE'RE DIFFERENT" title="What we don't do." />
+          <SectionHead eyebrow="HOW WE'RE DIFFERENT" title="What we do and don't do." />
           <ul className="space-y-4 text-[16.5px] leading-relaxed text-[var(--color-fg)]">
             <li className="flex gap-3.5 items-start">
               <span className="font-semibold text-[var(--color-accent-dark)] flex-shrink-0">
@@ -112,11 +112,20 @@ export default function AboutPage() {
             </li>
             <li className="flex gap-3.5 items-start">
               <span className="font-semibold text-[var(--color-accent-dark)] flex-shrink-0">
-                We don&apos;t take commission.
+                The site is free for you.
               </span>
               <span>
-                Inspectors pay nothing to be in the network. We charge nothing to match you. The
-                inspector you book charges you directly for the inspection.
+                We charge nothing to match you with inspectors. Inspectors in our network pay us a
+                small per-lead referral fee (industry standard, already in their cost base) - so
+                your quoted price is the same as if you found the inspector directly. Full
+                breakdown on the{" "}
+                <a
+                  href="/how-we-make-money"
+                  className="text-[var(--color-primary)] font-semibold underline"
+                >
+                  transparency page
+                </a>
+                .
               </span>
             </li>
             <li className="flex gap-3.5 items-start">
@@ -124,9 +133,9 @@ export default function AboutPage() {
                 We don&apos;t accept agent referrals.
               </span>
               <span>
-                Inspectors with active commercial relationships with sellers or agents are excluded
-                from the network. This is the most common source of conflict-of-interest in the
-                industry, and we cut it out at the door.
+                Inspectors with active commercial relationships with sellers or real estate agents
+                are excluded from the network. This is the most common source of
+                conflict-of-interest in the industry, and we cut it out at the door.
               </span>
             </li>
             <li className="flex gap-3.5 items-start">
