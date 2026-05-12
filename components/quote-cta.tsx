@@ -1,10 +1,9 @@
 import Link from "next/link";
-import { Phone, ArrowRight } from "lucide-react";
-import { SITE } from "@/lib/site";
+import { ArrowRight } from "lucide-react";
 
 export function QuoteCta({
   title = "Get 3 free quotes inside 24 hours",
-  sub = "Two minutes to brief us. We match you with licensed independent Adelaide inspectors. No agent referrals.",
+  sub = "Two minutes to brief us. We match you with licensed independent Adelaide inspectors. No agent referrals. No commission. The matching service is free.",
   variant = "navy",
 }: {
   title?: string;
@@ -44,12 +43,9 @@ export function QuoteCta({
             <Link href="/contact" className="btn btn-primary">
               Get 3 Free Quotes <ArrowRight size={16} />
             </Link>
-            <a
-              href={SITE.phoneHref}
-              className={`btn ${navy ? "btn-ghost" : "btn-secondary"}`}
-            >
-              <Phone size={16} /> {SITE.phone}
-            </a>
+            <Link href="/about" className={`btn ${navy ? "btn-ghost" : "btn-secondary"}`}>
+              How matching works
+            </Link>
           </div>
         </div>
       </div>

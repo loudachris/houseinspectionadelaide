@@ -32,7 +32,7 @@ export function RevealCards() {
         <SectionHead
           eyebrow="WHAT YOU'RE REALLY BUYING"
           title="Three perspectives on every Adelaide property."
-          sub="The agent shows you one. The other two cost about $500 to uncover. They could save you hundreds of thousands."
+          sub="The agent shows you one. An independent inspection uncovers the other two. The negotiation leverage that gives you is significant."
         />
 
         <div className="grid md:grid-cols-3 gap-6">

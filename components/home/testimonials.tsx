@@ -6,7 +6,7 @@ const TESTIMONIALS = [
     name: "Sarah M.",
     sub: "Pre-purchase · Glenelg",
     quote:
-      "Found three cracks the agent kept calling 'cosmetic'. Inspector flagged them as movement in the footings. Negotiated $24k off, walked away from a money pit.",
+      "Found three cracks the agent kept calling 'cosmetic'. Inspector flagged them as movement in the footings. Negotiated a substantial price reduction, walked away from a money pit.",
   },
   {
     name: "James H.",

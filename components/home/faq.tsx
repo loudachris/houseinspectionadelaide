@@ -8,19 +8,19 @@ import { FaqSchema } from "../schema";
 const ITEMS = [
   {
     q: "How much does a building inspection cost in Adelaide?",
-    a: "A standard pre-purchase inspection on a 3-bedroom home runs $400 to $650. Building + pest combo is $550 to $900. Heritage and specialist properties start at $700 and can reach $1,500. Final price depends on property size, age, location, and turnaround urgency.",
+    a: "Prices vary by inspector, property type, size, age, scope, and turnaround urgency. We don't set prices - inspectors do. The matching service gives you three independent quotes so you can compare actual pricing for your specific property. Combos (building + pest) usually quote lower than booking separately.",
   },
   {
     q: "How long does an inspection take?",
-    a: "Most pre-purchase inspections take 2 to 3 hours on site. Heritage or larger homes can take 4+ hours. You receive your AS 4349.1 compliant report within 48 hours of the inspection.",
+    a: "Most pre-purchase inspections take 2 to 3 hours on site. Heritage or larger homes can take 4+ hours. The AS 4349.1 compliant report is typically delivered within 48 hours of the inspection.",
   },
   {
     q: "Do I need a building and pest combo?",
-    a: "Strongly recommended for any pre-1987 home or any property with timber framing. Modern slab-and-steel homes carry lower pest risk but combo is still good due diligence. One visit, two reports, typically $150 to $250 cheaper than booking separately.",
+    a: "Strongly recommended for any pre-1987 home or any property with timber framing. Modern slab-and-steel homes carry lower pest risk but combo is still good due diligence. One visit, two reports.",
   },
   {
     q: "What's the difference between a defect inspection and pre-purchase?",
-    a: "A pre-purchase inspection is broad: every system, every surface, AS 4349.1 compliant. A defect inspection is targeted at known issues; you tell the inspector what to focus on. Defect inspections cost less but cover less.",
+    a: "A pre-purchase inspection is broad: every system, every surface, AS 4349.1 compliant. A defect inspection is targeted at known issues; you tell the inspector what to focus on. Defect inspections cover less ground.",
   },
   {
     q: "How do I choose an independent inspector?",
@@ -34,6 +34,10 @@ const ITEMS = [
     q: "Do you charge for the matching service?",
     a: "No. The matching service is free for property buyers. The inspector you choose charges you directly for their inspection. We make no commission from the inspector and have no commercial relationship with them.",
   },
+  {
+    q: "Are you the inspectors?",
+    a: "No. House Inspection Adelaide is an independent lead-matching service. We connect property buyers with independent licensed Adelaide building inspectors. We don't conduct inspections, set prices, or handle the inspection contract - that's directly between you and the inspector you choose.",
+  },
 ];
 
 export function FAQ() {
@@ -45,7 +49,7 @@ export function FAQ() {
         <SectionHead
           eyebrow="FAQ"
           title="Questions Adelaide buyers ask before they book."
-          sub="Quick answers on cost, scope, timing, and choosing the right inspector for your property."
+          sub="Quick answers on scope, timing, choosing the right inspector, and how the matching service actually works."
           center
         />
 

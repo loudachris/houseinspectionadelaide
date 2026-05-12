@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { MapPin, Clock, Info, ShieldCheck } from "lucide-react";
 import { SITE } from "@/lib/site";
 import { Breadcrumb } from "@/components/breadcrumb";
 import { QuoteForm } from "@/components/quote-form";
 import { SectionHead } from "@/components/section-head";
+import { DisclaimerBanner } from "@/components/disclaimer-banner";
 
 export const metadata: Metadata = {
   title: "Contact House Inspection Adelaide | 3 Free Quotes in 24 Hours",
   description:
-    "Contact House Inspection Adelaide. Get matched with 3 independent licensed building inspectors inside 24 hours. Free service, no agent referrals.",
+    "Contact House Inspection Adelaide. Get matched with 3 independent licensed building inspectors inside 24 hours. Free matching service, no agent referrals.",
   alternates: { canonical: "https://houseinspectionadelaide.com.au/contact" },
 };
 
@@ -26,31 +27,34 @@ export default function ContactPage() {
               </h1>
               <p className="text-[18px] text-[var(--color-muted)] leading-relaxed max-w-[520px] mb-8">
                 Brief us once, compare three independent licensed inspectors, pick the one that
-                suits your timeline and budget. The matching service is free.
+                suits your timeline. The matching service is free.
               </p>
 
               <div className="space-y-5">
                 <ContactItem
-                  icon={<Phone size={18} />}
-                  label="Call or text"
-                  value={SITE.phone}
-                  href={SITE.phoneHref}
-                />
-                <ContactItem
                   icon={<Clock size={18} />}
-                  label="Business hours"
-                  value="Tue-Fri, 9am-6pm ACST. After-hours messages returned next business day."
+                  label="Turnaround"
+                  value="Three quotes in your inbox inside 24 hours. Often within 4 to 6 business hours."
                 />
                 <ContactItem
                   icon={<MapPin size={18} />}
                   label="Coverage"
-                  value={`Adelaide metro, Hills, Fleurieu, Gawler corridor. ${SITE.address.suburb} ${SITE.address.state} ${SITE.address.postcode}.`}
+                  value="Adelaide metro, Hills, Fleurieu, Gawler corridor, and Aldinga / southern coast."
                 />
                 <ContactItem
-                  icon={<Mail size={18} />}
-                  label="Form replies"
-                  value="Use the form. Direct email is for ongoing client matters only."
+                  icon={<ShieldCheck size={18} />}
+                  label="Every inspector verified"
+                  value="Active SA licence, current insurance, no agent or builder commercial relationship."
                 />
+                <ContactItem
+                  icon={<Info size={18} />}
+                  label="How replies work"
+                  value="We reply via email through the form. We don't take phone calls or accept email enquiries - the form is the fastest, most accurate way to brief us."
+                />
+              </div>
+
+              <div className="mt-10">
+                <DisclaimerBanner />
               </div>
             </div>
 
@@ -71,7 +75,7 @@ export default function ContactPage() {
             <StepCard
               n={1}
               title="Brief us"
-              body="Fill the form or call. Two minutes of property details and timeline."
+              body="Fill the form. Two minutes of property details and timeline."
             />
             <StepCard
               n={2}
@@ -81,7 +85,7 @@ export default function ContactPage() {
             <StepCard
               n={3}
               title="You choose"
-              body="Compare prices, turnaround, and inspector experience. Book directly with your pick."
+              body="Compare prices, turnaround, and inspector experience. Book directly with your pick - we don't handle payment or the inspection contract."
             />
           </div>
         </div>
@@ -94,12 +98,10 @@ function ContactItem({
   icon,
   label,
   value,
-  href,
 }: {
   icon: React.ReactNode;
   label: string;
   value: string;
-  href?: string;
 }) {
   return (
     <div className="flex items-start gap-4">
@@ -116,16 +118,7 @@ function ContactItem({
         <div className="font-[var(--font-mono)] text-[11px] tracking-[.12em] uppercase text-[var(--color-secondary-dark)] mb-0.5">
           {label}
         </div>
-        {href ? (
-          <a
-            href={href}
-            className="text-[16px] font-semibold text-[var(--color-primary-dark)] hover:text-[var(--color-primary)]"
-          >
-            {value}
-          </a>
-        ) : (
-          <div className="text-[15px] text-[var(--color-fg)] leading-relaxed">{value}</div>
-        )}
+        <div className="text-[15px] text-[var(--color-fg)] leading-relaxed">{value}</div>
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import { Hero } from "@/components/home/hero";
+import { DisclaimerBanner } from "@/components/disclaimer-banner";
 import { RevealCards } from "@/components/home/reveal-cards";
 import { HowItWorks } from "@/components/home/how-it-works";
 import { ServicesSection } from "@/components/home/services-section";
@@ -18,6 +19,7 @@ export default function HomePage() {
   return (
     <>
       <Hero />
+      <DisclaimerBanner variant="muted" />
       <RevealCards />
       <HowItWorks />
       <ServicesSection />

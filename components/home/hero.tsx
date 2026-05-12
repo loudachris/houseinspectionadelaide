@@ -2,8 +2,7 @@
 
 import { useEffect, useReducer } from "react";
 import Link from "next/link";
-import { Phone, ArrowRight, Clock, ShieldCheck, BadgeCheck } from "lucide-react";
-import { SITE } from "@/lib/site";
+import { ArrowRight, Clock, ShieldCheck, BadgeCheck } from "lucide-react";
 
 const HERO_PHASES = [
   {
@@ -64,7 +63,7 @@ export function Hero() {
           <div>
             <div className="eyebrow text-[var(--color-secondary-light)] mb-4">
               <span className="dot" />
-              ADELAIDE BUILDING INSPECTORS · MATCHED IN 24 HOURS
+              ADELAIDE INSPECTOR MATCHING · 3 QUOTES IN 24 HOURS
             </div>
             <h1 className="text-[clamp(40px,5vw,60px)] mb-4">
               Independent building inspections,{" "}
@@ -75,28 +74,28 @@ export function Hero() {
               </em>
             </h1>
             <p className="text-[18px] leading-relaxed text-white/85 mb-7 max-w-[560px]">
-              Get three free quotes from licensed independent Adelaide building inspectors
-              inside 24 hours. AS 4349.1 compliant reports. No agent referrals, no conflicts
-              of interest.
+              We connect you with three independent licensed Adelaide building inspectors inside 24
+              hours. AS 4349.1 compliant reports. No agent referrals, no conflicts of interest.
+              We&apos;re a matching service - we don&apos;t conduct inspections ourselves.
             </p>
 
             <div className="flex flex-wrap gap-x-6 gap-y-4 mb-7">
               <ProofItem icon={<Clock size={16} />} label="Same-day match" />
               <ProofItem icon={<BadgeCheck size={16} />} label="AS 4349.1 compliant" />
-              <ProofItem icon={<ShieldCheck size={16} />} label="$5M public liability" />
+              <ProofItem icon={<ShieldCheck size={16} />} label="Fully insured network" />
             </div>
 
             <div className="flex flex-wrap gap-3 mb-7">
               <Link href="/contact" className="btn btn-primary">
                 Get 3 Free Quotes <ArrowRight size={16} />
               </Link>
-              <a href={SITE.phoneHref} className="btn btn-ghost">
-                <Phone size={16} /> {SITE.phone}
-              </a>
+              <Link href="/about" className="btn btn-ghost">
+                How matching works
+              </Link>
             </div>
 
             <div className="flex flex-wrap gap-x-5 gap-y-2 pt-5 border-t border-white/10">
-              {["Licensed inspectors", "$5M insured", "AS 4349.1 compliant", "24hr match"].map(
+              {["Licensed inspectors", "Insured network", "AS 4349.1 compliant", "24hr match"].map(
                 (t) => (
                   <span
                     key={t}

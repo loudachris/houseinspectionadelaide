@@ -20,7 +20,7 @@ export type ServiceContent = {
 export const SERVICE_CONTENT: Record<string, ServiceContent> = {
   "pre-purchase-building-inspection": {
     slug: "pre-purchase-building-inspection",
-    metaTitle: "Pre-Purchase Building Inspection Adelaide | From $400, AS 4349.1",
+    metaTitle: "Pre-Purchase Building Inspection Adelaide | AS 4349.1 Compliant",
     metaDescription:
       "Independent Adelaide pre-purchase building inspection. AS 4349.1 compliant report inside 48 hours. Get matched with 3 licensed inspectors within 24 hours.",
     h1: "Pre-Purchase Building Inspection Adelaide",
@@ -75,8 +75,8 @@ export const SERVICE_CONTENT: Record<string, ServiceContent> = {
     ],
     faq: [
       {
-        q: "How much is a pre-purchase building inspection in Adelaide?",
-        a: "Standard pre-purchase inspections run $400 to $650 for a 3-bedroom standalone home. Heritage stone, two-storey, or larger homes can reach $700 to $1,500. The matching service is free - the inspector you choose charges you directly.",
+        q: "How much does a pre-purchase inspection cost in Adelaide?",
+        a: "Pricing varies by inspector, property type, size, age, and turnaround urgency. We don't set prices - inspectors do. The matching service connects you with three independent inspectors who each quote your specific property. The matching service is free; you pay the inspector you choose directly.",
       },
       {
         q: "Can I attend the inspection?",
@@ -94,7 +94,7 @@ export const SERVICE_CONTENT: Record<string, ServiceContent> = {
     slug: "building-and-pest-inspection",
     metaTitle: "Building and Pest Inspection Adelaide | Combined Report, AS 4349.1 + .3",
     metaDescription:
-      "Combined building and timber pest inspection Adelaide. One visit, two reports, save $150-$250. Independent licensed inspectors matched in 24 hours.",
+      "Combined building and timber pest inspection Adelaide. One visit, two reports. Independent licensed inspectors matched in 24 hours.",
     h1: "Building and Pest Inspection Adelaide",
     intro:
       "Two reports, one site visit, one combined invoice. Pre-purchase building (AS 4349.1) plus timber pest (AS 4349.3). The most common combo for pre-1987 Adelaide homes, where timber framing carries real termite and borer risk.",
@@ -141,9 +141,9 @@ export const SERVICE_CONTENT: Record<string, ServiceContent> = {
       body: "AS 4349.1 covers the building condition. AS 4349.3 covers timber pest. Combined reports clearly delineate findings under each standard so you can use them separately in negotiation or insurance.",
     },
     whyMatter: [
-      "Adelaide's subterranean termite species can destroy a timber frame in 12 to 18 months once established. The cost of treatment and structural remediation easily exceeds $20,000.",
+      "Adelaide's subterranean termite species can destroy a timber frame in 12 to 18 months once established. Treatment and structural remediation costs are substantial.",
       "Most home insurance excludes termite damage. The only protection is detection before damage spreads, then ongoing monitoring.",
-      "Combo bookings save $150 to $250 vs separate building + pest bookings because the inspector only mobilises once.",
+      "Combo bookings usually quote lower than two separate bookings because the inspector only mobilises once.",
     ],
     faq: [
       {
@@ -156,7 +156,7 @@ export const SERVICE_CONTENT: Record<string, ServiceContent> = {
       },
       {
         q: "Can I get the combo if the seller's already done a building inspection?",
-        a: "Yes. Vendor reports from the seller's chosen inspector are common but a buyer-engaged independent report is the standard recommendation. They cost roughly the same and the negotiation leverage of having your own report is significant.",
+        a: "Yes. Vendor reports from the seller's chosen inspector are common but a buyer-engaged independent report is the standard recommendation. The negotiation leverage of having your own report is significant.",
       },
     ],
     related: ["pre-purchase-building-inspection", "pest-inspection", "termite-inspection"],
@@ -421,7 +421,7 @@ export const SERVICE_CONTENT: Record<string, ServiceContent> = {
       body: "Each stage report is AS 4349.0 compliant. Reports can be used in builder negotiations, statutory warranty claims, and dispute resolution.",
     },
     whyMatter: [
-      "The earlier a defect is identified, the cheaper it is to fix. A frame issue caught at stage 2 might cost $500 to remediate. The same issue caught at handover could cost $25,000 and weeks of delay.",
+      "The earlier a defect is identified, the cheaper it is to fix. A frame issue caught at stage 2 is a small remediation. The same issue caught at handover can be tens of thousands of dollars and weeks of delay.",
       "Many new-build defects are hidden by subsequent stages. A slab issue is invisible once the frame goes up. A plumbing rough-in error is invisible once the plaster goes on.",
       "Independent staged inspections give you written, photographic evidence at each stage - which the builder must address before progress payments are released.",
     ],
@@ -559,7 +559,7 @@ export const SERVICE_CONTENT: Record<string, ServiceContent> = {
     whyMatter: [
       "South Australia banned asbestos cement production in 1987 but bans on installation continued through 2003. Any pre-2004 home may contain some asbestos.",
       "Renovating, drilling, or sanding asbestos materials releases respirable fibres. Mesothelioma takes 20 to 40 years to develop.",
-      "Disturbing asbestos without identification can trigger SA EPA fines and forced full-property remediation costing $20,000+.",
+      "Disturbing asbestos without identification can trigger SA EPA fines and force full-property remediation.",
     ],
     faq: [
       {
@@ -567,8 +567,8 @@ export const SERVICE_CONTENT: Record<string, ServiceContent> = {
         a: "Any home built before 1987 should be assumed to contain asbestos until tested. Many post-1987 homes have residual asbestos from renovations.",
       },
       {
-        q: "How much does lab analysis cost?",
-        a: "Lab fees vary by sample count but are usually $40 to $80 per sample. The inspector quote includes a sample allowance - additional samples are extra.",
+        q: "Does lab analysis cost extra?",
+        a: "Yes. Lab fees are charged per sample by the NATA-accredited laboratory and are separate from the inspector's fee. The inspector quote usually includes a sample allowance - additional samples are itemised separately.",
       },
       {
         q: "Can I just leave asbestos alone?",

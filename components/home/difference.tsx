@@ -15,7 +15,7 @@ const ITEMS = [
   {
     Icon: ShieldCheck,
     title: "Fully insured",
-    body: "$5M+ public liability and $1M+ professional indemnity across the network.",
+    body: "Comprehensive public liability and professional indemnity insurance held by every inspector in the network.",
   },
   {
     Icon: FileCheck,

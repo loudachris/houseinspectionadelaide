@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { CheckCircle2, ArrowRight, FileText, Clock, Award, AlertCircle, Phone } from "lucide-react";
-import { SERVICES, SITE } from "@/lib/site";
+import { CheckCircle2, ArrowRight, FileText, Clock, Award, AlertCircle } from "lucide-react";
+import { SERVICES } from "@/lib/site";
 import { SERVICE_CONTENT } from "@/data/services-content";
 import { Breadcrumb } from "@/components/breadcrumb";
 import { QuoteForm } from "@/components/quote-form";
@@ -65,7 +65,7 @@ export default async function ServicePage(
               </p>
 
               <div className="grid sm:grid-cols-3 gap-4 mb-8">
-                <StatChip icon={<FileText size={18} />} label="From" value={`$${content.priceFrom}-${content.priceTo}`} />
+                <StatChip icon={<FileText size={18} />} label="Standard" value={content.standard} />
                 <StatChip icon={<Clock size={18} />} label="On site" value={content.duration} />
                 <StatChip icon={<Award size={18} />} label="Report" value={content.turnaround} />
               </div>
@@ -74,9 +74,9 @@ export default async function ServicePage(
                 <Link href="/contact" className="btn btn-primary">
                   Get 3 free quotes <ArrowRight size={16} />
                 </Link>
-                <a href={SITE.phoneHref} className="btn btn-secondary">
-                  <Phone size={16} /> {SITE.phone}
-                </a>
+                <Link href="/about" className="btn btn-secondary">
+                  How matching works
+                </Link>
               </div>
             </div>
 

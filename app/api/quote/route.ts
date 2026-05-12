@@ -33,7 +33,7 @@ export async function POST(request: Request) {
     if (!apiKey) {
       console.error("RESEND_API_KEY is not configured");
       return NextResponse.json(
-        { error: "Email service is not configured. Please call us on 0403 454 199." },
+        { error: "We're having a temporary issue receiving your request. Please try again in a few minutes." },
         { status: 500 }
       );
     }
@@ -102,7 +102,7 @@ export async function POST(request: Request) {
     if (error) {
       console.error("Resend send error", error);
       return NextResponse.json(
-        { error: "Could not send right now. Please call us on 0403 454 199." },
+        { error: "Could not submit right now. Please try again in a few minutes." },
         { status: 502 }
       );
     }
@@ -111,7 +111,7 @@ export async function POST(request: Request) {
   } catch (err) {
     console.error("Quote API error", err);
     return NextResponse.json(
-      { error: "Unexpected error. Please call us on 0403 454 199." },
+      { error: "Unexpected error. Please refresh and try again." },
       { status: 500 }
     );
   }

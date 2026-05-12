@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Calendar, Phone, Clock } from "lucide-react";
-import { SITE } from "@/lib/site";
+import { Calendar, Clock, ShieldCheck } from "lucide-react";
 import { Breadcrumb } from "@/components/breadcrumb";
 import { QuoteForm } from "@/components/quote-form";
 import { SectionHead } from "@/components/section-head";
+import { DisclaimerBanner } from "@/components/disclaimer-banner";
 
 export const metadata: Metadata = {
   title: "Book Online | House Inspection Adelaide",
@@ -41,19 +41,39 @@ export default function BookOnlinePage() {
                 <Detail
                   icon={<Calendar size={18} />}
                   label="Inspection scheduling"
-                  value="Most network inspectors can attend within 48 hours of booking. Same-day available in cooling-off."
+                  value="Most network inspectors can attend within 48 hours of booking. Same-day or next-day available during cooling-off."
                 />
                 <Detail
-                  icon={<Phone size={18} />}
-                  label="Prefer to call?"
-                  value={SITE.phone}
-                  href={SITE.phoneHref}
+                  icon={<ShieldCheck size={18} />}
+                  label="What you can expect"
+                  value="Three quotes will arrive via email. Each includes price, turnaround, inspector name, licence number, and what's specifically included for your property."
                 />
+              </div>
+
+              <div className="mt-10">
+                <DisclaimerBanner />
               </div>
             </div>
 
             <QuoteForm />
           </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-[var(--color-cream)]">
+        <div className="wrap max-w-[820px]">
+          <SectionHead
+            eyebrow="HOW BOOKING WORKS"
+            title="From booking request to inspection on site."
+            center
+          />
+          <ol className="space-y-4 list-none p-0">
+            <ListStep n={1} body="You submit the booking form with property and timeline details." />
+            <ListStep n={2} body="We confirm receipt by email within minutes." />
+            <ListStep n={3} body="We match you with three independent inspectors and send their quotes to you (inside 24 hours)." />
+            <ListStep n={4} body="You choose your inspector and book directly with them. The inspector contracts and charges you directly - the matching service is not party to that contract." />
+            <ListStep n={5} body="Inspector attends, completes inspection, delivers report. You raise any follow-up questions with the inspector." />
+          </ol>
         </div>
       </section>
     </>
@@ -64,12 +84,10 @@ function Detail({
   icon,
   label,
   value,
-  href,
 }: {
   icon: React.ReactNode;
   label: string;
   value: string;
-  href?: string;
 }) {
   return (
     <div className="flex items-start gap-4">
@@ -86,17 +104,19 @@ function Detail({
         <div className="font-[var(--font-mono)] text-[11px] tracking-[.12em] uppercase text-[var(--color-secondary-dark)] mb-0.5">
           {label}
         </div>
-        {href ? (
-          <a
-            href={href}
-            className="text-[16px] font-semibold text-[var(--color-primary-dark)] hover:text-[var(--color-primary)]"
-          >
-            {value}
-          </a>
-        ) : (
-          <div className="text-[15px] text-[var(--color-fg)] leading-relaxed">{value}</div>
-        )}
+        <div className="text-[15px] text-[var(--color-fg)] leading-relaxed">{value}</div>
       </div>
     </div>
+  );
+}
+
+function ListStep({ n, body }: { n: number; body: string }) {
+  return (
+    <li className="flex gap-4 items-start bg-white border border-[var(--color-line)] rounded-2xl p-5">
+      <span className="w-9 h-9 rounded-full bg-[var(--color-accent)] text-white grid place-items-center font-[var(--font-display)] font-extrabold text-[15px] flex-shrink-0">
+        {n}
+      </span>
+      <span className="text-[15.5px] text-[var(--color-fg)] leading-relaxed pt-1">{body}</span>
+    </li>
   );
 }

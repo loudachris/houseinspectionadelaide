@@ -2,16 +2,15 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { Phone, ChevronDown, Menu, X } from "lucide-react";
-import { SITE } from "@/lib/site";
+import { Menu, X } from "lucide-react";
 
 const NAV = [
   { href: "/", label: "Home" },
   { href: "/services", label: "Services" },
   { href: "/areas", label: "Areas" },
-  { href: "/pricing", label: "Pricing" },
+  { href: "/pricing", label: "How pricing works" },
   { href: "/about", label: "About" },
-  { href: "/guides/how-much-is-a-building-inspection", label: "Guides" },
+  { href: "/guides", label: "Guides" },
 ];
 
 export function SiteHeader() {
@@ -51,7 +50,7 @@ export function SiteHeader() {
                 House Inspection Adelaide
               </span>
               <span className="text-[11px] opacity-75 tracking-[.12em] uppercase">
-                Independent · AS 4349.1
+                Independent matching service
               </span>
             </span>
           </Link>
@@ -69,13 +68,6 @@ export function SiteHeader() {
           </nav>
 
           <div className="hidden md:flex items-center gap-3 ml-auto lg:ml-0">
-            <a
-              href={SITE.phoneHref}
-              className="text-white/90 font-semibold text-sm flex items-center gap-2 hover:text-white"
-            >
-              <Phone size={14} />
-              {SITE.phone}
-            </a>
             <Link href="/contact" className="btn btn-primary">
               Get 3 Free Quotes
             </Link>
@@ -103,12 +95,6 @@ export function SiteHeader() {
                 {item.label}
               </Link>
             ))}
-            <a
-              href={SITE.phoneHref}
-              className="text-white px-3 py-2 rounded-lg text-sm font-semibold flex items-center gap-2"
-            >
-              <Phone size={14} /> {SITE.phone}
-            </a>
             <Link
               href="/contact"
               className="btn btn-primary mt-1"

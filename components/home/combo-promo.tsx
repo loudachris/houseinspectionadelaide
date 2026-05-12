@@ -15,8 +15,9 @@ export function ComboPromo() {
             </h2>
             <p className="text-[16.5px] text-[var(--color-muted)] leading-relaxed max-w-[560px] mb-7">
               Pre-1987 Adelaide homes almost always have timber framing. Termites and timber
-              borers don&apos;t care how pretty the kitchen is. Combo bookings save $150 to $250
-              over separate bookings and you only schedule one visit.
+              borers don&apos;t care how pretty the kitchen is. The combo bundles both inspections
+              into a single visit, single report, and inspectors typically quote it lower than two
+              separate bookings.
             </p>
             <div className="flex flex-wrap gap-3">
               <Link href="/services/building-and-pest-inspection" className="btn btn-primary">
@@ -29,8 +30,8 @@ export function ComboPromo() {
           </div>
 
           <div className="grid sm:grid-cols-2 gap-4">
-            <Stat label="Saved vs separate booking" value="$150-$250" highlight />
-            <Stat label="Inspection time on site" value="3-4 hrs" />
+            <Stat label="Single visit" value="2 in 1" highlight />
+            <Stat label="On-site time" value="3-4 hrs" />
             <Stat label="Report turnaround" value="48 hrs" />
             <Stat label="Standards covered" value="AS 4349.1 + .3" />
           </div>

@@ -3,6 +3,7 @@ import { ShieldCheck, BadgeCheck, FileCheck, Eye, ListChecks, Clock } from "luci
 import { Breadcrumb } from "@/components/breadcrumb";
 import { QuoteCta } from "@/components/quote-cta";
 import { SectionHead } from "@/components/section-head";
+import { DisclaimerBanner } from "@/components/disclaimer-banner";
 
 export const metadata: Metadata = {
   title: "About House Inspection Adelaide | Independent Inspector Matching",
@@ -24,8 +25,8 @@ const PROMISES = [
   },
   {
     Icon: ShieldCheck,
-    title: "$5M public liability minimum",
-    body: "Plus $1M+ professional indemnity insurance. We confirm each inspector's policy is current before matching.",
+    title: "Comprehensively insured",
+    body: "Every inspector in the network holds current public liability and professional indemnity insurance. We confirm each policy is current before matching.",
   },
   {
     Icon: FileCheck,
@@ -54,13 +55,14 @@ export default function AboutPage() {
           <h1 className="font-[var(--font-display)] font-extrabold text-[clamp(38px,4.5vw,56px)] leading-[1.05] text-[var(--color-primary-dark)] mb-6">
             We match Adelaide buyers with independent inspectors. Nothing else.
           </h1>
-          <p className="text-[18.5px] text-[var(--color-muted)] leading-relaxed">
+          <p className="text-[18.5px] text-[var(--color-muted)] leading-relaxed mb-8">
             House Inspection Adelaide is a free matching service that connects property buyers in
             Adelaide and surrounding South Australia with three independent, licensed, insured
             building inspectors inside 24 hours. We don&apos;t inspect properties. We don&apos;t
             take commission from inspectors. We don&apos;t refer to agents. Our only job is to
             surface the right inspector for your property and timeline.
           </p>
+          <DisclaimerBanner />
         </div>
       </section>
 
@@ -152,8 +154,8 @@ export default function AboutPage() {
           </p>
           <ul className="space-y-3 text-[16px] text-[var(--color-fg)] mb-8">
             <li>· An active SA Building Work Contractors Licence (verified annually).</li>
-            <li>· $5M+ public liability insurance.</li>
-            <li>· $1M+ professional indemnity insurance.</li>
+            <li>· Current public liability insurance.</li>
+            <li>· Current professional indemnity insurance.</li>
             <li>· Either a trade background (carpentry, building, structural engineering) or formal building inspection qualifications.</li>
             <li>· Zero current commercial relationship with real estate agencies, sellers, or building companies.</li>
           </ul>

@@ -12,54 +12,51 @@ export type GuideContent = {
 export const GUIDE_CONTENT: Record<string, GuideContent> = {
   "how-much-is-a-building-inspection": {
     slug: "how-much-is-a-building-inspection",
-    metaTitle: "How Much Is a Building Inspection in Adelaide? (2026 Price Guide)",
+    metaTitle: "How Much Is a Building Inspection in Adelaide?",
     metaDescription:
-      "Adelaide building inspection cost in 2026: $400-$650 standard, $550-$900 combo, $700-$1500 specialist. Full price breakdown by property type and inspector.",
+      "Adelaide building inspection costs vary by property and inspector. We don't set prices - we match you with three independent inspectors who each quote your specific property.",
     h1: "How Much Is a Building Inspection in Adelaide?",
     publishedAt: "2026-05-11T00:00:00Z",
     answer:
-      "A standard pre-purchase building inspection in Adelaide costs $400 to $650 for a 3-bedroom single-storey home. A combined building and pest inspection costs $550 to $900. Heritage stone, two-storey, or specialist properties cost $700 to $1,500. Prices include the inspection, photographic report, and AS 4349.1 compliance.",
+      "Adelaide building inspection prices vary by inspector, property type, size, age, scope, and turnaround urgency. Different inspectors quote different prices for the same property. The fastest way to know what an inspection actually costs for your Adelaide property is to receive three independent quotes through a matching service and compare them.",
     body: [
       {
-        heading: "Standard pre-purchase building inspection: $400-$650",
+        heading: "Why there is no single 'standard price'",
         paras: [
-          "The most common scope: a single-storey 3-bedroom standalone home, brick veneer or similar, suburban Adelaide location, AS 4349.1-2007 compliant report delivered within 48 hours.",
-          "Final price within the range depends on property size, age, sub-floor accessibility, and how urgent your turnaround is. Same-day reports typically cost about $100 more than the standard 48-hour turnaround.",
+          "Every Adelaide property is different. A 3-bedroom single-storey brick veneer in Morphett Vale takes less time to inspect than a heritage stone villa in Unley. A new-estate slab home in Aldinga is faster than a hill-side custom build in Stirling. Inspectors price the work, not a flat fee.",
+          "Inspectors also charge differently for the same scope. A senior inspector with 20+ years and heritage experience charges more than a newer entrant. Both can deliver an AS 4349.1 compliant report. You weigh experience against price when comparing quotes.",
         ],
       },
       {
-        heading: "Building and pest combo: $550-$900",
+        heading: "What inspectors look at when pricing your job",
         paras: [
-          "Building inspection (AS 4349.1) plus a timber pest inspection (AS 4349.3) - termites, borer, and fungal decay. Bundled into one site visit, delivered as one combined report or two separate reports.",
-          "Saves $150 to $250 vs booking the same two inspections separately, because the inspector only mobilises once.",
-          "Strongly recommended for any pre-1987 Adelaide home with timber framing, and any property in the Adelaide Hills foothills or established eastern suburbs where termite activity is more common.",
+          "Property size: square metreage, number of bedrooms, single vs double storey. Larger properties take longer on site.",
+          "Age and construction: pre-war stone requires heritage expertise; mid-century brick veneer is standard scope; modern slab-and-frame is the fastest.",
+          "Scope of inspection: pre-purchase building only, building + pest combo, defect-targeted, asbestos, mould. Each scope has different time and standard-of-care implications.",
+          "Turnaround urgency: standard 48-hour report vs same-day. Same-day usually attracts a premium.",
+          "Inspector experience level: senior inspectors with specialist backgrounds quote differently to generalists.",
+          "Travel: some inspectors charge for travel to outer-metro or hills. The matching service routes requests to inspectors who minimise this.",
         ],
       },
       {
-        heading: "Heritage and specialist: $700-$1,500",
+        heading: "Why the matching service helps",
         paras: [
-          "Heritage stone villas, two-storey homes, commercial properties, or larger custom builds. Inspectors with heritage experience charge a premium and the inspections take 4 hours+ on site.",
-          "Properties on hectare-plus lots or with extensive ancillary buildings (sheds, granny flats, retaining walls) also fall into this range.",
+          "When you brief us with the property details, we identify three independent licensed Adelaide inspectors suited to your property and timeline. They each provide a quote for your specific job.",
+          "Three quotes for the same property typically reveal a real-market range. You see what your property type genuinely costs to inspect, what trade-offs exist (faster vs cheaper, generalist vs specialist), and you make an informed call.",
+          "We don't set inspector prices, take commission from inspectors, or push you towards any particular inspector. You choose - and you pay the inspector directly.",
         ],
       },
       {
-        heading: "What's included in the price",
+        heading: "What's typically included in any quote",
         paras: [
-          "The inspector's site visit (2-4 hours depending on property), AS 4349.1 compliant report, photographic evidence of every defect, executive summary, recommendations, and 48-hour turnaround.",
-          "What's not included: lab analysis fees if asbestos sampling is required ($40-$80 per sample), engineer's certification if structural concerns are flagged ($300-$800), or treatment quotes if termites are found (separate from the inspector).",
+          "The inspector's site visit (2-4 hours depending on property), AS 4349.1 compliant report, photographic evidence of every defect, executive summary, recommendations, and standard report turnaround.",
+          "Not typically included: lab analysis fees for asbestos sampling (charged by NATA-accredited lab), engineer's certification if structural concerns are flagged (separate engineer), or treatment quotes if termites are found (separate from the inspector).",
         ],
       },
       {
-        heading: "Why prices vary",
+        heading: "How to get quotes for your property",
         paras: [
-          "Property size, age, sub-floor accessibility, location (travel cost), inspector experience level, urgency of report, and whether it's a single inspection or part of a combo. The matching service is free - the inspector you choose charges you directly.",
-          "Inspectors in the network range from $400 standard scope on a small home up to $1,500 for complex heritage work. You compare quotes before booking.",
-        ],
-      },
-      {
-        heading: "How to get an exact quote",
-        paras: [
-          "Brief us with the property address, settlement timeline, and inspection type. We match you with three independent licensed Adelaide inspectors inside 24 hours. You compare prices, turnaround, and inspector profiles before booking.",
+          "Brief us with the property address, settlement timeline, and inspection type. We match you with three independent licensed Adelaide inspectors inside 24 hours. You compare prices, turnaround, and inspector profiles before booking direct with your chosen inspector.",
         ],
       },
     ],
@@ -72,54 +69,50 @@ export const GUIDE_CONTENT: Record<string, GuideContent> = {
 
   "building-inspection-cost": {
     slug: "building-inspection-cost",
-    metaTitle: "Adelaide Building Inspection Cost (Full Breakdown by Property Type)",
+    metaTitle: "Adelaide Building Inspection Cost (What Drives the Price)",
     metaDescription:
-      "Adelaide building inspection costs broken down by property type, age, and inspection scope. Standard, combo, heritage, and specialist pricing.",
-    h1: "Adelaide Building Inspection Cost (Full Breakdown)",
+      "Building inspection cost in Adelaide depends on property type, inspector experience, scope, and turnaround. Get three real quotes to see actual prices for your property.",
+    h1: "Adelaide Building Inspection Cost (What Drives the Price)",
     publishedAt: "2026-05-11T00:00:00Z",
     answer:
-      "Adelaide building inspection costs vary by property type: $400-$650 for standard pre-purchase on a 3-bedroom home, $550-$900 for building and pest combo, $700-$1,500 for heritage stone or larger properties. Add $100-$200 for same-day reporting; subtract about $50 for off-peak weekday bookings.",
+      "Building inspection cost in Adelaide depends on six main factors: property size and type, age and construction, scope of inspection, turnaround urgency, inspector experience, and travel. There is no single market price - inspectors set their own pricing per job. The matching service gives you three independent quotes for your specific property so you can compare actual cost.",
     body: [
       {
-        heading: "By property type",
+        heading: "By property size and type",
         paras: [
-          "1-2 bedroom unit or apartment: $350-$550. Inspections focus on the interior and accessible common areas; full strata reports are a separate service.",
-          "3-bedroom standalone, single storey, brick veneer: $400-$650. The most common Adelaide inspection.",
-          "4+ bedroom or two-storey home: $550-$850. Longer site visit, more square metres, more sub-floor and roof void to inspect.",
-          "Heritage stone (pre-1940): $700-$1,500. Requires heritage-experienced inspector who can interpret movement, stonework, and old construction methods.",
-          "Acreage or rural-residential: $700-$1,500+. Add ancillary buildings (sheds, granny flats), water tanks, septic systems, and retaining walls.",
+          "Smaller units and apartments take less time on site than standalone homes. Inspectors usually quote them lower.",
+          "Standalone 3-bedroom single-storey homes are the most common Adelaide inspection - the baseline most inspectors price around.",
+          "Larger four-plus bedroom or two-storey homes take longer and inspectors usually reflect that in pricing.",
+          "Heritage stone, two-storey, or complex builds require senior or heritage-specialist inspectors who quote at the top of the range.",
+          "Acreage and rural-residential properties add inspection time for ancillary buildings, water tanks, septic systems, and retaining walls.",
         ],
       },
       {
         heading: "By inspection scope",
         paras: [
-          "Pre-purchase building (AS 4349.1): $400-$1,500 depending on property.",
-          "Timber pest only (AS 4349.3): $200-$400.",
-          "Termite inspection (focused): $200-$350.",
-          "Building + pest combo: $550-$1,200 depending on property.",
-          "Handover/practical completion: $450-$700.",
-          "Staged construction (5-stage): $1,500-$2,500 total.",
-          "Defect inspection: $350-$800 depending on scope.",
-          "Asbestos inspection: $400-$800 (plus $40-$80 per lab sample).",
-          "Mould inspection: $350-$700 (plus optional air sampling).",
+          "Pre-purchase building inspection (AS 4349.1) is the standard scope most quotes are built around.",
+          "Combined building and pest (AS 4349.1 + AS 4349.3) is the most common bundle. Combo quotes are usually lower than booking the two inspections separately because the inspector only mobilises once.",
+          "Timber pest only (AS 4349.3) and focused termite inspections are usually shorter and quoted lower than full building scope.",
+          "Handover or practical completion inspection (AS 4349.0) for new builds. Pricing depends on build size.",
+          "Staged construction inspections through a new build (slab, frame, lock-up, fix-out, completion) are usually priced per stage with a multi-stage package.",
+          "Defect inspections (AS 4349.7) are scope-driven - the narrower your brief, the shorter the inspection.",
+          "Specialist scopes (asbestos, mould) often carry separate lab analysis fees on top of the inspector's quote.",
         ],
       },
       {
-        heading: "Add-ons and premium pricing",
+        heading: "Add-ons that can affect the quote",
         paras: [
-          "Same-day report turnaround: +$100-$200 over standard 48-hour pricing.",
-          "Weekend or after-hours inspection: +$100-$150 typically.",
-          "Travel to outer-metro or hills properties: +$50-$150 for some inspectors. Our network includes regional inspectors who avoid this surcharge.",
-          "Engineer's report on identified structural concerns: $300-$800 separate from the inspector.",
+          "Same-day or overnight reports usually carry a premium over the standard 48-hour turnaround.",
+          "Weekend or after-hours inspection can attract a premium with some inspectors.",
+          "Travel to outer-metro, hills, or Fleurieu coast can attract travel charges from city-based inspectors. The matching service includes regional inspectors who minimise this.",
+          "Engineer's report on flagged structural concerns is a separate engagement with a structural engineer, not included in the inspection fee.",
         ],
       },
       {
-        heading: "How to keep the cost down",
+        heading: "How to compare quotes",
         paras: [
-          "Book during weekday business hours and accept the standard 48-hour turnaround.",
-          "If combo is appropriate, book the combo instead of two separate inspections - saves $150-$250.",
-          "Get three quotes through the matching service - prices vary by inspector even for the same scope.",
-          "Schedule before settlement, not in panic mode - urgent bookings command premium pricing.",
+          "When you receive three quotes, compare more than the dollar number. Check the AS standard the inspector works to, what's specifically inspected, report turnaround, inspector licence and insurance currency, whether attending the inspection is included, and whether the inspector takes phone follow-up about the report.",
+          "The cheapest quote is not always the right call. The most expensive isn't either. The right inspector for your property is somewhere in the comparison.",
         ],
       },
     ],
@@ -132,20 +125,19 @@ export const GUIDE_CONTENT: Record<string, GuideContent> = {
 
   "pest-and-building-inspection-cost": {
     slug: "pest-and-building-inspection-cost",
-    metaTitle: "Building and Pest Inspection Cost Adelaide (2026 Guide)",
+    metaTitle: "Building and Pest Inspection Cost Adelaide (What Drives It)",
     metaDescription:
-      "Adelaide building and pest inspection costs $550 to $900 for combo bookings. Saves $150-$250 vs separate inspections. Full price breakdown and why combo is worth it.",
+      "Adelaide building and pest combo inspection pricing depends on property and inspector. Combos usually quote lower than separate bookings. Get three real quotes.",
     h1: "How Much Does a Building and Pest Inspection Cost in Adelaide?",
     publishedAt: "2026-05-11T00:00:00Z",
     answer:
-      "A combined building and pest inspection in Adelaide costs $550 to $900 for a standard 3-bedroom home. The combo saves $150 to $250 vs booking the building inspection (AS 4349.1) and timber pest inspection (AS 4349.3) separately, because the inspector only mobilises once.",
+      "A combined building and pest inspection (AS 4349.1 + AS 4349.3) in Adelaide is usually quoted lower than booking the two inspections separately, because the inspector only mobilises once. Exact pricing depends on the inspector, property type, size, age, and turnaround urgency. The matching service gives you three independent quotes for your specific property.",
     body: [
       {
         heading: "Combo vs separate booking",
         paras: [
-          "Separate: building inspection $400-$650 plus pest inspection $200-$400 = $600 to $1,050 total. You also schedule two visits, often a week apart.",
-          "Combo: $550-$900 for both inspections in one visit, one combined report (or two reports if you prefer).",
-          "Savings: $150-$250 typically, plus the time you'd spend coordinating two appointments.",
+          "When you book the building inspection (AS 4349.1) and the timber pest inspection (AS 4349.3) separately, you book two visits, often a week apart. Inspectors price each visit including their mobilisation and travel time.",
+          "A combo bundles both inspections into a single site visit. Same inspector, one trip, one combined report (or two reports if you prefer them separately). Inspectors typically quote the combo lower than the two-separate-bookings total.",
         ],
       },
       {
@@ -171,10 +163,9 @@ export const GUIDE_CONTENT: Record<string, GuideContent> = {
         ],
       },
       {
-        heading: "When standalone pest is cheaper",
+        heading: "How to get real combo pricing",
         paras: [
-          "If you already have a recent (last 3-6 months) AS 4349.1 building inspection but no pest inspection, a standalone $200-$400 timber pest inspection is the right call.",
-          "Annual termite monitoring on a property you already own falls into the standalone $200-$350 range.",
+          "Brief us with the property details and request a combo. Three independent Adelaide inspectors will each quote the combo for your property, so you see the real-market range. The matching service is free; you pay the inspector you choose directly.",
         ],
       },
     ],
@@ -292,7 +283,7 @@ export const GUIDE_CONTENT: Record<string, GuideContent> = {
       {
         heading: "Report turnaround",
         paras: [
-          "Standard turnaround is 48 hours from the site visit. Same-day reports are available from most inspectors for a $100-$200 premium.",
+          "Standard turnaround is 48 hours from the site visit. Same-day reports are available from most inspectors and usually carry a premium.",
           "If you're in cooling-off period pressure (SA cooling-off is two clear business days from contract), brief us with the urgency and we route requests to inspectors who can deliver inside 24 hours.",
         ],
       },
@@ -332,7 +323,7 @@ export const GUIDE_CONTENT: Record<string, GuideContent> = {
         heading: "Who can conduct one",
         paras: [
           "In South Australia, building inspectors hold a Building Work Contractors Licence (issued by Consumer and Business Services). Some also hold professional memberships with bodies like the Master Inspectors Association or the Association of Building Consultants.",
-          "Insurance is critical - look for inspectors with $5M+ public liability and $1M+ professional indemnity. Every inspector in our network meets these minimums.",
+          "Insurance is critical - look for inspectors with current public liability and professional indemnity insurance. Every inspector in our network meets these minimums.",
         ],
       },
       {
@@ -387,7 +378,7 @@ export const GUIDE_CONTENT: Record<string, GuideContent> = {
         heading: "What they do after the site visit",
         paras: [
           "Write a comprehensive report following AS 4349.1 format: executive summary, scope, limitations, defects with photographs, recommendations for further investigation, and any urgent issues flagged separately.",
-          "Standard turnaround is 48 hours from inspection to report. Same-day reports cost a premium.",
+          "Standard turnaround is 48 hours from inspection to report. Same-day reports usually carry a premium.",
         ],
       },
       {
@@ -395,7 +386,7 @@ export const GUIDE_CONTENT: Record<string, GuideContent> = {
         paras: [
           "Licensed under SA Building Work Contractors Licence (issued by Consumer and Business Services).",
           "Often hold professional memberships: Master Inspectors Association of Australia, Association of Building Consultants, Institute of Building Inspectors.",
-          "Hold professional indemnity insurance ($1M+) and public liability insurance ($5M+).",
+          "Hold professional indemnity insurance and public liability insurance - verified before they enter the matching network.",
           "Many come from trade backgrounds (carpentry, building, structural engineering) before specialising in inspections.",
         ],
       },
@@ -511,7 +502,7 @@ export const GUIDE_CONTENT: Record<string, GuideContent> = {
           "What's the most urgent issue on the report? (executive summary highlights)",
           "What would you negotiate on if you were buying this property?",
           "What ongoing maintenance should I budget for in the first 12-24 months?",
-          "What's the realistic remediation cost on the major defects?",
+          "What's the realistic remediation approach on the major defects?",
           "Is this property a good representative of its type, or are there issues I should walk away from?",
         ],
       },

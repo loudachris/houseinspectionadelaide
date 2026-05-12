@@ -2,8 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { Phone, X, ArrowRight } from "lucide-react";
-import { SITE } from "@/lib/site";
+import { X, ArrowRight } from "lucide-react";
 
 export function FloatingCta() {
   const [show, setShow] = useState(false);
@@ -41,13 +40,6 @@ export function FloatingCta() {
           <Link href="/contact" className="btn btn-primary flex-1 justify-center text-[13px] py-2.5 px-3">
             Get quotes <ArrowRight size={13} />
           </Link>
-          <a
-            href={SITE.phoneHref}
-            className="btn btn-secondary text-[13px] py-2.5 px-3 justify-center"
-            aria-label={`Call ${SITE.phone}`}
-          >
-            <Phone size={13} />
-          </a>
         </div>
       </div>
     </div>

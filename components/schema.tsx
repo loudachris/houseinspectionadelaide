@@ -12,15 +12,13 @@ function JsonLd({ data }: { data: object }) {
 export function OrganizationSchema() {
   const data = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": "Organization",
     "@id": `${SITE.url}#organization`,
     name: SITE.name,
     url: SITE.url,
-    telephone: SITE.phoneHref.replace("tel:", ""),
-    email: SITE.email,
+    description: SITE.disclaimer,
     address: {
       "@type": "PostalAddress",
-      streetAddress: SITE.address.street,
       addressLocality: SITE.address.suburb,
       addressRegion: SITE.address.state,
       postalCode: SITE.address.postcode,
@@ -31,13 +29,7 @@ export function OrganizationSchema() {
       name: `${s.name}, South Australia`,
     })),
     serviceType: "Building Inspection Matching Service",
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: SITE.region.coords.lat,
-      longitude: SITE.region.coords.lng,
-    },
     sameAs: [],
-    priceRange: "$$",
   };
   return <JsonLd data={data} />;
 }

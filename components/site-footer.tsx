@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Phone, ShieldCheck, BadgeCheck, FileCheck } from "lucide-react";
+import { ShieldCheck, BadgeCheck, FileCheck, Info } from "lucide-react";
 import { SITE, SUBURBS, SERVICES } from "@/lib/site";
 
 export function SiteFooter() {
@@ -24,19 +24,18 @@ export function SiteFooter() {
                   House Inspection Adelaide
                 </div>
                 <div className="text-[11px] tracking-[.12em] uppercase opacity-75">
-                  Independent · AS 4349.1
+                  Independent matching service
                 </div>
               </div>
             </div>
             <p className="mt-5 max-w-md text-[15px] leading-relaxed text-white/75">
-              We match Adelaide property buyers with three independent, licensed building
-              inspectors within 24 hours. No agent referrals, no kickbacks, no conflicts of
-              interest.
+              We connect Adelaide property buyers with three independent, licensed building
+              inspectors. No agent referrals, no kickbacks, no conflicts of interest.
             </p>
             <div className="mt-6 flex flex-wrap gap-4 text-[13px] text-white/80">
               <span className="flex items-center gap-2">
                 <ShieldCheck size={16} className="text-[var(--color-secondary-light)]" />
-                $5M Public Liability
+                Fully insured network
               </span>
               <span className="flex items-center gap-2">
                 <BadgeCheck size={16} className="text-[var(--color-secondary-light)]" />
@@ -86,20 +85,12 @@ export function SiteFooter() {
 
           <div>
             <h3 className="text-[14px] uppercase tracking-[.14em] text-white/60 font-[var(--font-mono)] mb-5">
-              Contact
+              Get started
             </h3>
-            <ul className="space-y-3 text-[14.5px]">
-              <li>
-                <a
-                  href={SITE.phoneHref}
-                  className="flex items-center gap-2 hover:text-[var(--color-secondary-light)]"
-                >
-                  <Phone size={16} /> {SITE.phone}
-                </a>
-              </li>
+            <ul className="space-y-2.5 text-[14.5px]">
               <li>
                 <Link href="/contact" className="hover:text-[var(--color-secondary-light)]">
-                  Contact form
+                  Request 3 free quotes
                 </Link>
               </li>
               <li>
@@ -107,16 +98,54 @@ export function SiteFooter() {
                   Book online
                 </Link>
               </li>
+              <li>
+                <Link href="/about" className="hover:text-[var(--color-secondary-light)]">
+                  How matching works
+                </Link>
+              </li>
+              <li>
+                <Link href="/pricing" className="hover:text-[var(--color-secondary-light)]">
+                  How pricing works
+                </Link>
+              </li>
+              <li>
+                <Link href="/sample-report" className="hover:text-[var(--color-secondary-light)]">
+                  Sample report
+                </Link>
+              </li>
               <li className="text-white/70 pt-2 text-[13.5px] leading-relaxed">
-                {SITE.address.street}
-                <br />
                 {SITE.address.suburb} {SITE.address.state} {SITE.address.postcode}
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-white/10 mt-14 pt-6 flex flex-col md:flex-row gap-3 justify-between text-[12.5px] text-white/55">
+        <div
+          className="mt-14 rounded-2xl p-6 md:p-7 border border-white/10"
+          style={{ background: "rgba(255,255,255,0.04)" }}
+        >
+          <div className="flex gap-4 items-start">
+            <span
+              className="w-10 h-10 rounded-full grid place-items-center flex-shrink-0"
+              style={{
+                background: "rgba(216,146,83,0.15)",
+                color: "var(--color-secondary-light)",
+              }}
+            >
+              <Info size={18} />
+            </span>
+            <div>
+              <div className="font-[var(--font-mono)] text-[11px] tracking-[.14em] uppercase text-[var(--color-secondary-light)] mb-1.5">
+                IMPORTANT - ABOUT THIS SERVICE
+              </div>
+              <p className="text-[14px] text-white/85 leading-relaxed m-0">
+                {SITE.disclaimer}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="border-t border-white/10 mt-10 pt-6 flex flex-col md:flex-row gap-3 justify-between text-[12.5px] text-white/55">
           <div>© {year} House Inspection Adelaide. All rights reserved.</div>
           <div className="flex gap-5 flex-wrap">
             <Link href="/privacy" className="hover:text-white">

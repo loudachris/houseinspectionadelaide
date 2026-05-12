@@ -3,14 +3,10 @@ export const SITE = {
   shortName: "HIA",
   domain: "houseinspectionadelaide.com.au",
   url: "https://houseinspectionadelaide.com.au",
-  phone: "0403 454 199",
-  phoneHref: "tel:+61403454199",
-  email: "chris@loudachris.com.au",
   address: {
-    street: "21-22 Greenhill Road",
-    suburb: "Wayville",
+    suburb: "Adelaide",
     state: "SA",
-    postcode: "5034",
+    postcode: "5000",
     country: "AU",
   },
   region: {
@@ -21,6 +17,10 @@ export const SITE = {
   },
   social: {},
   defaultOgImage: "/og-default.png",
+  disclaimer:
+    "House Inspection Adelaide is an independent lead-matching service. We connect property buyers with independent licensed Adelaide building inspectors. We do not conduct inspections, charge for inspections, set inspector prices, or receive commissions from inspectors. Every inspection contract is directly between you and the inspector you choose.",
+  disclaimerShort:
+    "Independent lead-matching service. We do not conduct inspections. Every inspection contract is between you and your chosen inspector.",
 } as const;
 
 export const SUBURBS = [
@@ -56,7 +56,7 @@ export const SERVICES = [
     slug: "building-and-pest-inspection",
     name: "Building and Pest Combo",
     short: "Building + Pest Combo",
-    blurb: "Two reports, one visit. Save $150 to $250.",
+    blurb: "Two reports, one visit. Typically priced lower than booking separately.",
     icon: "bug",
     standard: "AS 4349.1 + AS 4349.3",
     popular: false,
