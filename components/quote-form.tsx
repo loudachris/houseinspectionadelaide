@@ -1,10 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import { ArrowRight, CheckCircle2, Loader2 } from "lucide-react";
+import { useRouter } from "next/navigation";
+import { ArrowRight, Loader2 } from "lucide-react";
 import { SUBURBS, SERVICES } from "@/lib/site";
 
-type Status = "idle" | "submitting" | "success" | "error";
+type Status = "idle" | "submitting" | "error";
 
 export function QuoteForm({
   compact,
@@ -15,6 +16,7 @@ export function QuoteForm({
   defaultSuburb?: string;
   defaultService?: string;
 }) {
+  const router = useRouter();
   const [status, setStatus] = useState<Status>("idle");
   const [error, setError] = useState<string | null>(null);
 
@@ -32,35 +34,14 @@ export function QuoteForm({
       });
       if (!res.ok) {
         const j = await res.json().catch(() => ({}));
-        throw new Error(j.error || "Could not submit. Please try the phone number above.");
-      }
-      setStatus("success");
-      if (typeof window !== "undefined" && "gtag" in window) {
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        (window as any).gtag("event", "quote_request_submitted");
+        throw new Error(j.error || "Could not submit right now. Please try again in a few minutes.");
       }
       form.reset();
+      router.push("/thank-you");
     } catch (err: unknown) {
       setStatus("error");
       setError(err instanceof Error ? err.message : "Could not submit.");
     }
-  }
-
-  if (status === "success") {
-    return (
-      <div className="bg-white rounded-2xl border border-[var(--color-line)] p-8 md:p-10 shadow-[0_24px_60px_-24px_rgba(20,41,68,0.18)]">
-        <div className="w-14 h-14 rounded-full bg-[var(--color-primary-container)] grid place-items-center mb-4">
-          <CheckCircle2 size={28} className="text-[var(--color-primary)]" />
-        </div>
-        <h3 className="text-[22px] font-[var(--font-display)] font-semibold text-[var(--color-primary-dark)] mb-2">
-          Request received
-        </h3>
-        <p className="text-[15px] text-[var(--color-muted)] leading-relaxed">
-          We will match you with three licensed Adelaide building inspectors and email you the
-          quotes within 24 hours. Most matches are inside 4 to 6 hours during business days.
-        </p>
-      </div>
-    );
   }
 
   return (
